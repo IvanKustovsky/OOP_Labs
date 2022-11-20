@@ -1,0 +1,14 @@
+D:\C# projects\lab2\bin\Debug\netcoreapp3.1\lab2.exe
+D:\C# projects\lab2\bin\Debug\netcoreapp3.1\lab2.deps.json
+D:\C# projects\lab2\bin\Debug\netcoreapp3.1\lab2.runtimeconfig.json
+D:\C# projects\lab2\bin\Debug\netcoreapp3.1\lab2.runtimeconfig.dev.json
+D:\C# projects\lab2\bin\Debug\netcoreapp3.1\lab2.dll
+D:\C# projects\lab2\bin\Debug\netcoreapp3.1\lab2.pdb
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.csproj.AssemblyReference.cache
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.AssemblyInfoInputs.cache
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.AssemblyInfo.cs
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.csproj.CoreCompileInputs.cache
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.dll
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.pdb
+D:\C# projects\lab2\obj\Debug\netcoreapp3.1\lab2.genruntimeconfig.cache

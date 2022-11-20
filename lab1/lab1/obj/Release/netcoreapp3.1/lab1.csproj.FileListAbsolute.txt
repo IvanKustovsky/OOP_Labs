@@ -1,0 +1,14 @@
+D:\C# projects\lab1\lab1\bin\Release\netcoreapp3.1\lab1.exe
+D:\C# projects\lab1\lab1\bin\Release\netcoreapp3.1\lab1.deps.json
+D:\C# projects\lab1\lab1\bin\Release\netcoreapp3.1\lab1.runtimeconfig.json
+D:\C# projects\lab1\lab1\bin\Release\netcoreapp3.1\lab1.runtimeconfig.dev.json
+D:\C# projects\lab1\lab1\bin\Release\netcoreapp3.1\lab1.dll
+D:\C# projects\lab1\lab1\bin\Release\netcoreapp3.1\lab1.pdb
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.AssemblyInfoInputs.cache
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.AssemblyInfo.cs
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.csproj.CoreCompileInputs.cache
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.dll
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.pdb
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.genruntimeconfig.cache
+D:\C# projects\lab1\lab1\obj\Release\netcoreapp3.1\lab1.csproj.AssemblyReference.cache

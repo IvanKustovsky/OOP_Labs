@@ -19,5 +19,12 @@
     "Rating": 0,
     "GameType": "training",
     "GameResult": "WinCrosses"
+  },
+  {
+    "FirstToMovePlayer": "IvanK",
+    "SecondToMovePlayer": "Zhen",
+    "Rating": 5,
+    "GameType": "online",
+    "GameResult": "WinCrosses"
   }
 ]

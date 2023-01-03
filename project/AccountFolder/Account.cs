@@ -53,7 +53,7 @@ namespace project.AccountFolder
 
         public void PlayGame(Account opponent) //Гра онлайн
         {
-            if (opponent.NickName == NickName)
+            if (opponent == null || opponent.NickName == NickName)
             {
                 throw new ArgumentException();
             }

@@ -104,9 +104,9 @@ namespace project.Games
 
                     else
                     {
-                        Console.WriteLine("------------------------------------------------------------------------------\n|  " +
-                            "You entered the number of cell that is already filled. Please try again.  |\n" +
-                            "------------------------------------------------------------------------------");
+                        Console.WriteLine("---------------------------------------------------------\n|  " +
+                            "You entered wrong number of cell. Please try again.  |\n" +
+                            "---------------------------------------------------------");
                 PrintBoard(board);
                 PlayerTurn();
                     }

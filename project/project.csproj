@@ -9,6 +9,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties database_4games_1json__JsonSchema="asc" /></VisualStudio></ProjectExtensions>
 
 </Project>

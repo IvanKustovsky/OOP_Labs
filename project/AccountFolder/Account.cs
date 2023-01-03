@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using project.DataBase;
@@ -13,8 +12,6 @@ namespace project.AccountFolder
         [JsonProperty] public string UserID { get; private set; }
         [JsonProperty] public string NickName { get; private set; }
         [JsonProperty] public string UserPassword { get; private set; }
-        private readonly List<Game> allGames = new List<Game>();
-
         public Account(string name, string password)
         {
             NickName = name;
@@ -22,7 +19,7 @@ namespace project.AccountFolder
             UserPassword = password;
         }
 
-        public virtual int CurrentRating
+        public int CurrentRating
         {
             get
             {
@@ -61,8 +58,6 @@ namespace project.AccountFolder
                 throw new ArgumentException();
             }
             Game game = new Game(this,opponent,GameType.online);
-            allGames.Add(game);
-            opponent.allGames.Add(game);
             var gamesHistory = DBContext.ReadAllFromDBGames();
             gamesHistory.Add(game);
             string serializedGames = JsonConvert.SerializeObject(gamesHistory);
@@ -71,7 +66,7 @@ namespace project.AccountFolder
 
         public void PlayGame() //Гра з ботом
         {
-            var game = new Game(GameType.training);
+            var game = new GameVsBot(GameType.training);
             var gamesHistory = DBContext.ReadAllFromDBGames();
             gamesHistory.Add(game);
             string serializedGames = JsonConvert.SerializeObject(gamesHistory);

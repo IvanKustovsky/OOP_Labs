@@ -10,14 +10,14 @@ namespace project.Games
     }
     class Game : GameLogic
     {
-        [JsonIgnore] public Account FirstToMove { get; private set; }
-        [JsonIgnore] public Account SecondToMove { get; private set; }
-        [JsonProperty] public string FirstToMovePlayer { get; private set; }
-        [JsonProperty] public string SecondToMovePlayer { get; private set; }
-        [JsonIgnore] public PossibleResult Result { get; private set; }
-        [JsonProperty] public int Rating { get; private set; }
-        [JsonProperty] public string GameType { get; private set; }
-        [JsonProperty] public string GameResult { get; private set; }
+        [JsonIgnore] public Account FirstToMove { get; protected set; }
+        [JsonIgnore] public Account SecondToMove { get; protected set; }
+        [JsonProperty] public string FirstToMovePlayer { get; protected set; }
+        [JsonProperty] public string SecondToMovePlayer { get; protected set; }
+        [JsonIgnore] public PossibleResult Result { get; protected set; }
+        [JsonProperty] public int Rating { get; protected set; }
+        [JsonProperty] public string GameType { get; protected set; }
+        [JsonProperty] public string GameResult { get; protected set; }
 
         public Game(Account player1, Account player2, GameType type) //Звичайна гра
         {
@@ -29,16 +29,6 @@ namespace project.Games
             GameResult = Result.ToString();
             Rating = 5;
             GameType = type.ToString();
-        }
-
-        public Game(GameType type) //Перевизначення гри (гра проти бота)
-        {
-            GameType = type.ToString();
-            FirstToMovePlayer = "X";
-            SecondToMovePlayer = "O";
-            Rating = 0;
-            Result = PlayGameVsBot();
-            GameResult = Result.ToString();
         }
 
         [JsonConstructor]

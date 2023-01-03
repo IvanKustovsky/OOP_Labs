@@ -1,14 +1,20 @@
 [
   {
-    "UserID": "4d6f4a65-1e9c-4f06-948c-1fb32240b13e",
+    "UserID": "68c3a9af-0b21-47e2-a69d-000429ec519b",
     "NickName": "IvanK",
     "UserPassword": "1A1DC91C907325C69271DDF0C944BC",
+    "CurrentRating": 1
+  },
+  {
+    "UserID": "9852a396-7b4f-46b7-921e-f5e03eea8db5",
+    "NickName": "Zhen",
+    "UserPassword": "202CB962AC59075B964B07152D234B",
     "CurrentRating": 11
   },
   {
-    "UserID": "0c56f3ea-6dfa-4126-8622-5df04b525e16",
-    "NickName": "Zhen",
-    "UserPassword": "202CB962AC59075B964B07152D234B",
+    "UserID": "9c400973-e5ff-4b57-9bc0-47955079470f",
+    "NickName": "Artem",
+    "UserPassword": "24AC16F8FC5A2115A2E7A12BF9D88B",
     "CurrentRating": 1
   }
 ]

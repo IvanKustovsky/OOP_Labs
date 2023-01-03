@@ -4,7 +4,7 @@ using project.DataBase;
 
 namespace project.UI
 {
-    class ManageController  
+    class ManageController
     {
         private List<IUserInterface> UIs { get; set; }
         public ManageController()

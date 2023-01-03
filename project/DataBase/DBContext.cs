@@ -8,7 +8,7 @@ namespace project.DataBase
 {
     class DBContext
     {
-        //Введіть ваш шлях до файлу
+        //Введіть ваш шлях до файлів
         public static string DBFilePath { get; } = @"D:\C# projects\project\DataBase\data.json";
         public static string DBFilePathToGamesHistory { get; } = @"D:\C# projects\project\DataBase\games.json";
         public DBContext()

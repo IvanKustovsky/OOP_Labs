@@ -1,14 +1,14 @@
 [
   {
-    "FirstToMovePlayer": "IvanK",
-    "SecondToMovePlayer": "Zhen",
+    "FirstToMovePlayer": "Zhen",
+    "SecondToMovePlayer": "IvanK",
     "Rating": 5,
     "GameType": "online",
     "GameResult": "WinCrosses"
   },
   {
-    "FirstToMovePlayer": "IvanK",
-    "SecondToMovePlayer": "Zhen",
+    "FirstToMovePlayer": "Zhen",
+    "SecondToMovePlayer": "IvanK",
     "Rating": 5,
     "GameType": "online",
     "GameResult": "WinCrosses"

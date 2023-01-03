@@ -1,0 +1,23 @@
+[
+  {
+    "FirstToMovePlayer": "IvanK",
+    "SecondToMovePlayer": "Zhen",
+    "Rating": 5,
+    "GameType": "online",
+    "GameResult": "WinCrosses"
+  },
+  {
+    "FirstToMovePlayer": "IvanK",
+    "SecondToMovePlayer": "Zhen",
+    "Rating": 5,
+    "GameType": "online",
+    "GameResult": "WinCrosses"
+  },
+  {
+    "FirstToMovePlayer": "X",
+    "SecondToMovePlayer": "O",
+    "Rating": 0,
+    "GameType": "training",
+    "GameResult": "WinCrosses"
+  }
+]

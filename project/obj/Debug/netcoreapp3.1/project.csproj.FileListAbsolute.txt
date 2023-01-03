@@ -1,0 +1,16 @@
+D:\C# projects\project\bin\Debug\netcoreapp3.1\project.exe
+D:\C# projects\project\bin\Debug\netcoreapp3.1\project.deps.json
+D:\C# projects\project\bin\Debug\netcoreapp3.1\project.runtimeconfig.json
+D:\C# projects\project\bin\Debug\netcoreapp3.1\project.runtimeconfig.dev.json
+D:\C# projects\project\bin\Debug\netcoreapp3.1\project.dll
+D:\C# projects\project\bin\Debug\netcoreapp3.1\project.pdb
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.csproj.AssemblyReference.cache
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.AssemblyInfoInputs.cache
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.AssemblyInfo.cs
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.csproj.CoreCompileInputs.cache
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.dll
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.pdb
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.genruntimeconfig.cache
+D:\C# projects\project\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\C# projects\project\obj\Debug\netcoreapp3.1\project.csproj.CopyComplete

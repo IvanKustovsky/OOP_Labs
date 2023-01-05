@@ -17,7 +17,7 @@ namespace project.UI
         public void Action()
         {
             Console.Clear();
-            var allCurrentUsers = DBContext.ReadAllFromDB();
+            var allCurrentUsers = Context.GetAllAccountsFromDB;
             Console.WriteLine("-----------------------\n|  Enter a NickName:  |\n-----------------------");
             var name = Console.ReadLine();
             if (IsPlayerExist(name))
@@ -53,11 +53,19 @@ namespace project.UI
             }
             allCurrentUsers.Add(new Account(name,HashedPW));
             string serializedUsers = JsonConvert.SerializeObject(allCurrentUsers);
-            File.WriteAllText(DBContext.DBFilePath, serializedUsers);
+            File.WriteAllText(Context.DBFilePath, serializedUsers);
             Console.Clear();
         }
+        public string Message()
+        {
+            return "----------------------------------------------\n" +
+                "|            Welcome to Main Menu            |\n" +
+                "----------------------------------------------\n" +
+                "----------------------------------------------\n" +
+                "|  1.Sign up  |  |  2.Sign in  |  |  3.Exit  |\n" +
+                "----------------------------------------------";
+        }
 
-        
         private int ActionNumber()
         {
             Console.WriteLine("------------------------\n|  Enter your option:  |\n------------------------");
@@ -78,22 +86,14 @@ namespace project.UI
 
         private bool IsPlayerExist(string name)
         {
-            return DBContext.ReadAllFromDB().FirstOrDefault(x => x.NickName == name) != null;
+            return Context.GetAllAccountsFromDB.FirstOrDefault(x => x.NickName == name) != null;
         }
 
         private bool IsPasswordTaken(string pass)
         {
-            return DBContext.ReadAllFromDB().FirstOrDefault(x => x.UserPassword == Hashing.GetHashPassword(pass)) != null;
+            return Context.GetAllAccountsFromDB.FirstOrDefault(x => x.UserPassword == Hashing.GetHashPassword(pass)) != null;
         }
         
-        public string Message()
-        {
-            return "----------------------------------------------\n" +
-                "|            Welcome to Main Menu            |\n" +
-                "----------------------------------------------\n" +
-                "----------------------------------------------\n" +
-                "|  1.Sign up  |  |  2.Sign in  |  |  3.Exit  |\n" +
-                "----------------------------------------------";
-        }
+        
     }
 }

@@ -8,12 +8,14 @@ namespace project.DataBase
 {
     class DBContext
     {
-        //Введіть ваш шлях до файлів
-        public static string DBFilePath { get; } = @"D:\C# projects\project\DataBase\data.json";
-        public static string DBFilePathToGamesHistory { get; } = @"D:\C# projects\project\DataBase\games.json";
+        public string DBFilePath { get; private set; }
+        public string DBFilePathToGamesHistory { get; private set; }
         public DBContext()
         {
-            if (File.Exists(DBFilePath) == false  && File.Exists(DBFilePathToGamesHistory) == false)
+            DBFilePath = @"D:\C# projects\project\DataBase\data.json";
+            DBFilePathToGamesHistory = @"D:\C# projects\project\DataBase\games.json";
+            if (File.Exists(DBFilePath) == false &&
+                File.Exists(DBFilePathToGamesHistory) == false)
             {
                 var file1 = File.Create(DBFilePath);
                 var file2 = File.Create(DBFilePathToGamesHistory);
@@ -21,21 +23,18 @@ namespace project.DataBase
                 file2.Close();
             }
         }
-       
-        public static List<Game> ReadAllFromDBGames()
-        {
-            string json = File.ReadAllText(DBFilePathToGamesHistory);
-            List<Game> allGames = JsonConvert.DeserializeObject<List<Game>>(json);
-            return allGames ?? new List<Game>();
-        }
-
-        public static List<Account> ReadAllFromDB()
-        {
-            string json = File.ReadAllText(DBFilePath);
-            List<Account> currentPlayers = JsonConvert.DeserializeObject<List<Account>>(json);
-            return currentPlayers ?? new List<Account>();
-        }
-
+        public List<Game> GetAllGamesFromDB {  get
+            {
+                string json = File.ReadAllText(DBFilePathToGamesHistory);
+                List<Game> allGames = JsonConvert.DeserializeObject<List<Game>>(json);
+                return allGames ?? new List<Game>();
+            } }
+        public List<Account> GetAllAccountsFromDB { get
+            {
+                string json = File.ReadAllText(DBFilePath);
+                List<Account> currentPlayers = JsonConvert.DeserializeObject<List<Account>>(json);
+                return currentPlayers ?? new List<Account>();
+            } }
     }
     }
 

@@ -1,6 +1,6 @@
 ﻿namespace project.UI
 {
-    interface IUserInterface
+    internal interface IUserInterface
     {
         string Message();
         void Action();

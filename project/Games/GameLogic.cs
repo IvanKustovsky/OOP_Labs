@@ -1,26 +1,24 @@
 ﻿using System;
 using System.Text;
-using System.Threading;
 
 namespace project.Games
 {
     public enum PossibleResult
     {
+        Draw,
         WinCrosses,
-        WinNoughts,
-        Draw
+        WinNoughts
     }
-
     public enum FigureToPlay
     {
         crosses = 'X',
         noughts = 'O'
     }
-    class GameLogic
+    abstract class GameLogic
     {
-        public const int GRID_SIZE = 3;
+        private const int GRID_SIZE = 3;
 
-        protected static char[,] board = { {' ', ' ', ' '},
+        private static readonly char[,] board = { {' ', ' ', ' '},
                                         {' ', ' ', ' '},
                                         {' ', ' ', ' '}};
 
@@ -32,6 +30,7 @@ namespace project.Games
         
         protected PossibleResult PlayGame() //Звичайна гра
         {
+            PossibleResult result = PossibleResult.Draw;
             Console.WriteLine("---------------------------------------\n" +
                 "|  You can see an instruction board.  |\n---------------------------------------");
             PrintBoard(instructionBoard);
@@ -51,9 +50,8 @@ namespace project.Games
                 "The game ended at draw.  |\n-----------------------------\n" +
                 "\n------------------\n|  Final board:  |\n------------------");
             PrintBoard(board);
-            Thread.Sleep(3000);
             CleanBoard();
-            return PossibleResult.Draw;
+            return result;
         }
         protected PossibleResult PlayGameVsBot() //Гра проти комп'ютера
         {
@@ -256,7 +254,6 @@ namespace project.Games
             }
             return value;
         }
-
     }
 }
 

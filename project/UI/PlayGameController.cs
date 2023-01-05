@@ -46,7 +46,12 @@ namespace project.UI
                     break;
                 }
         }
-
+        public string Message()
+        {
+            return "------------------------------------------------------------------------------\n" +
+               "|  1.Training  |  |  2.Online  |  |  3.Back to the previous menu  |  4.Exit  |\n" +
+               "------------------------------------------------------------------------------";
+        }
         private void ActionCase2()
         {
             Console.Clear();
@@ -73,14 +78,13 @@ namespace project.UI
                 return;
             }
             //Оновлюємо рейтинг гравців, що грали
-            string json = File.ReadAllText(DBContext.DBFilePath);
+            string json = File.ReadAllText(Context.DBFilePath);
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
             jsonObj[GetIndexOfPlayer(SignInController.CurrentPlayer)]["CurrentRating"] = SignInController.CurrentPlayer.CurrentRating;
             jsonObj[GetIndexOfPlayer(Temp.Opponent)]["CurrentRating"] = Temp.Opponent.CurrentRating;
             string output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
-            File.WriteAllText(DBContext.DBFilePath, output);
+            File.WriteAllText(Context.DBFilePath, output);
         }
-
         private int ActionNumber()
         {
             Console.WriteLine("------------------------\n|  Enter your option:  |\n------------------------");
@@ -120,14 +124,7 @@ namespace project.UI
 
         private int GetIndexOfPlayer(Account user)
         {
-            return DBContext.ReadAllFromDB().FindIndex(x => x.NickName == user.NickName);
-        }
-
-        public string Message()
-        {
-            return "------------------------------------------------------------------------------\n" +
-               "|  1.Training  |  |  2.Online  |  |  3.Back to the previous menu  |  4.Exit  |\n" +
-               "------------------------------------------------------------------------------";
+            return Context.GetAllAccountsFromDB.FindIndex(x => x.NickName == user.NickName);
         }
     }
 }

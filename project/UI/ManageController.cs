@@ -13,11 +13,9 @@ namespace project.UI
             UIs = new List<IUserInterface>
             {
                 new AddUserController(dBContext),
-                new SignInController(dBContext),
-                new PlayGameController(dBContext)
+                new SignInController(dBContext)
             };
         }
-
         private void Show()
         {
             int actionNum;
@@ -47,6 +45,10 @@ namespace project.UI
                 }
             }
         }
+        public void Run()
+        {
+            Show();
+        }
 
         private int ActionNumber()
         {
@@ -65,10 +67,7 @@ namespace project.UI
             return value;
         }
 
-        public void Run()
-        {
-         Show();
-        }
+        
     }
 }
 
